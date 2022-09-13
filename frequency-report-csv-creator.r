@@ -37,7 +37,7 @@ if (TRUE) {
 
     my_list.wtd <- list()
     for (i in 1:length(my_list)) {
-        x <- svydesign(ids = ~1, weights = ~weight, data = my_list[[i]])
+        x <- svydesign(ids = ~1, weights = ~weightfactor, data = my_list[[i]])
         my_list.wtd <- append(my_list.wtd, x)
     }
 }
@@ -68,7 +68,7 @@ for (h in 1:length(var.names)) {
 
     for (i in 1:length(my_list)) {
 
-        svy.obj <- svydesign(ids = ~1, weights = ~weight, data = my_list[[i]])
+        svy.obj <- svydesign(ids = ~1, weights = ~weightfactor, data = my_list[[i]])
 
         x <- round(prop.table(svytable(as.formula(paste( "~" , var.names[h] )), design = svy.obj)) * 100, 2)
         y <- round(
