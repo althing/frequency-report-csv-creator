@@ -29,10 +29,11 @@ if (TRUE) {
 # create a list of svydesign objects (one for each df).
 if (TRUE) {
     df1 <- read.csv("./survey data/SMOKE22_US_data_wtd.csv")
-    df2 <- read.csv("./survey data/SMOKE22_WEST_EN_data_wtd.csv")
-    df3 <- read.csv("./survey data/SMOKE22_WEST_SP_data_wtd.csv")
+    #df2 <- read.csv("./survey data/SMOKE22_WEST_EN_data_wtd.csv")
+    #df3 <- read.csv("./survey data/SMOKE22_WEST_SP_data_wtd.csv")
 
-    my_list <- list(df1, df2, df3)
+    #my_list <- list(df1, df2, df3)
+    my_list <- list(df1)
 
     my_list.wtd <- list()
     for (i in 1:length(my_list)) {
