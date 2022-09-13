@@ -49,8 +49,8 @@ if (TRUE) {
 var.names <- names(my_list[[1]])
 # a <- which(var.names == "wfsm_likely")
 # b <- which(var.names == "wfsm_und")
-a <- which(var.names == "wf_worry")
-b <- which(var.names == "wfsm_likely")
+a <- which(var.names == "age")
+b <- which(var.names == "porch")
 var.names <- var.names[a:b]
 
 # make empty matrix
